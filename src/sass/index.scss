@@ -1,0 +1,1305 @@
+    // // 导入公共部分
+@import 'miaopublic';
+
+#index-tou {
+    position: absolute;
+    z-index: 10000;
+    // left: 9%;
+    background-color: rgba(255,255,255,0);
+    width : 100%;
+
+    
+        // opacity : 0.5;
+    a{
+        color : white;
+        p{
+            color:#333;
+        }
+    }
+    #ren{
+        color: #fff;
+    }
+    #land{
+        a{
+            color: #333;
+        }
+    }
+}    
+#index-tou:hover{
+    background-color: white;
+    
+}
+#index-tou:hover .we{
+    color : #333;
+}
+#index-tou:hover #ren{
+    color : #333;
+}
+
+#index-tou:hover #wpy{
+    color : #333;
+}
+// /* 轮播图下面一栏 */
+
+.mCycle{
+    height : 278px;
+    background-color: white;
+    margin-bottom : 50px;
+    .mCycle-top{
+        height : 233px;
+        padding-bottom : 45px;
+        ul{
+            width : 1240px;
+            margin : 0 auto;
+            overflow: hidden;
+            // background-color: aqua;
+            li{
+                width : 25%;
+                height : 187px;
+                padding-top : 45px;
+                float : left;
+                >a:hover{
+                    opacity: 0.8;
+                }
+                a{
+                    // display : block;
+                    width : 100%;
+                    height : 100%;
+                    text-align: center;
+                    transition: .2s linear;
+                    img{
+                        height : 130px;
+                        display : inline-block;
+                    }
+                    div{
+                        color : #333;
+                        font-size : 20px;
+                    }
+                    p{
+                        color : #999;
+                        font-size : 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+// /* 手机 */
+.mobile{
+    overflow: hidden;
+    margin-bottom : 50px;
+    /* 标题 */
+    .mobile-title{
+        font-size : 30px;
+        text-align: center;
+        margin-bottom: 10px;
+        h3{
+            font-weight: 400;
+        }
+    }
+    /* 图片大盒子 */
+    .mobile-box{
+        height : 450px;
+        background-color: #fff;
+        border-bottom : 1px solid #eee;
+        overflow: hidden;
+        box-sizing: border-box;
+        >a:hover{
+            opacity : .85;
+        }
+        a{
+            width : 100%;
+            height : 100%;
+            // display : block;
+            position : relative;
+            transition: .2s linear;
+            img{
+                width : auto;
+                height : auto;
+                position : absolute;
+                left : 50%;
+                top : 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+    /* 手机内容 */
+    .mobile-content{
+        .mobile-center{
+            width : 1240px;
+            margin : 0 auto;
+            ul{
+                overflow: hidden;
+                >li:hover{
+                    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+                }
+                li{
+                    width : 303px;
+                    height : 375px;
+                    float : left;
+                    // position : relative;
+                    margin-right : 9px;
+                    margin-top : 10px;
+                    background-color: #fff;
+                    overflow: hidden;
+                    transition: all .3s ease;
+                    div{
+                        height : 100%;
+                        a{
+                            width : 100%;
+                            height : 100%;
+                            text-align: center;
+                            position : relative;
+                            img{
+                                margin-top : 30px;
+                                height : 230px;
+                                display : inline-block;
+                            }
+                            .mobile-info{
+                                position : absolute;
+                                top : 270px;
+                                left : 0;
+                                width : 100%;
+                                text-align: center;
+                                span{
+                                    display : block;
+                                }
+                                .goods-name{
+                                    color: #333;
+                                    font-size: 16px;
+                                    margin-bottom: 2px;
+                                }
+                                .goods-desc{
+                                    color: #999;
+                                    font-size: 14px;
+                                }
+                               
+                            }
+                        }
+                        .mobile-info{
+                            position : absolute;
+                            top : 270px;
+                            left : 0;
+                            width : 100%;
+                            text-align: center;
+                        }
+                    }
+                }
+                .big{
+                    width : 615px;
+                    height : 610px;
+                    img{
+                        position : absolute;
+                        left : 50%;
+                        bottom : 0;
+                        height : 460px;
+                        margin-left : -250px;
+                    }
+                    .mobile-info{
+                        top : 58px;
+                        span{
+                            display : block;
+                        }
+                        .goods-name{
+                            color : #333;
+                            font-size : 28px;
+                            margin-bottom : 0;
+                        }
+                        .goods-desc{
+                            color : #333;
+                            font-size : 18px;
+                            margin-bottom : 3px;
+                        }
+                        .goods-price{
+                            position : relative;
+                            // top : 270px;
+                            display : inline-block;
+                            color : #c00;
+                            font-size : 22px;
+                            padding-left : 14px;
+                            i{
+                                font-style: normal;
+                                position : absolute;
+                                left : 0;
+                                font-size : 14px;
+                                bottom : 3px;
+                            }
+                            span{
+                                display : inline-block;
+                                font-size : 16px;
+                                font-weight: 400;
+                            }
+                            s{
+                                color : #666;
+                                font-size : 14px;
+                                margin-left : 8px;
+                                box-sizing: border-box;
+                            }
+                        }
+                    }
+                    .mobile-sign{
+                        background-image : linear-gradient(120deg,#ff3149,#ff64a6);
+                        position : absolute;
+                        top : 30px;
+                        left : 30px;
+                        display : block;
+                        width : 60px;
+                        height : 60px;
+                        line-height : 60px;
+                        color: #fff;
+                        font-size: 16px;
+                        text-align: center;
+                        border-radius: 50%;
+                    }
+                }
+                .big2{
+                    margin-right : 0;
+                }
+                .small{
+                    /* 免息 */
+                    .mobile-sign{
+                        background-image: linear-gradient(120deg,#ff3149,#ff64a6);
+                        position: absolute;
+                        top: 30px;
+                        left: 30px;
+                        display: block;
+                        width: 60px;
+                        height: 60px;
+                        line-height: 60px;
+                        color: #fff;
+                        font-size: 16px;
+                        text-align: center;
+                        border-radius: 50%;
+                    }
+                    .goods-price{
+                        position : relative;
+                        // top : 270px;
+                        display : inline-block;
+                        color : #c00;
+                        font-size : 22px;
+                        padding-left : 14px;
+                        i{
+                            font-style: normal;
+                            position : absolute;
+                            left : 0;
+                            font-size : 14px;
+                            bottom : 3px;
+                        }
+                        span{
+                            display : inline-block;
+                            font-size : 16px;
+                            font-weight: 400;
+                        }
+                        s{
+                            color : #666;
+                            font-size : 14px;
+                            margin-left : 8px;
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+                .phone6{
+                    margin-right : 0;
+                }
+            }
+        }
+    }
+}
+// /* 耳机 */
+.headset{
+    margin-bottom : 50px;
+    /* 耳机标题 */
+    .headset-title{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+        h3{
+            font-weight: 400;
+        }
+    }
+    /* 耳机大图片 */
+    .headset-box{
+        height : 450px;
+        background-color : #fff;
+        border-bottom : 1px solid #eee;
+        overflow : hidden;
+        box-sizing : border-box;
+        >a:hover{
+            opacity : 0.85;
+        }
+        a{
+            width : 100%;
+            height : 100%;
+            position : relative;
+            display : block;
+            transition : .2s linear;
+            img{
+                position : absolute;
+                width: auto;
+                height: auto;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+    /* 耳机内容 */
+    .headset-content{
+        .headset-center{
+            width : 1240px;
+            margin : 0 auto;
+            ul{
+                overflow : hidden;
+                >li:hover{
+                    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+                }
+                li{
+                    float : left;
+                    position: relative;
+                    width: 303px;
+                    height: 375px;
+                    margin-right: 9px;
+                    margin-top: 10px;
+                    background-color: #fff;
+                    overflow: hidden;
+                    transition: all .3s ease;
+                    a{
+                        position : relative;
+                        width : 100%;
+                        height : 100%;
+                        text-align: center;
+                        img{
+                            // width : 100%;
+                            height : 230px;
+                            margin-top : 30px;
+                            display: inline-block;
+                        }
+                        .headset-info{
+                            position: absolute;
+                            top: 270px;
+                            left: 0;
+                            width: 100%;
+                            text-align: center;
+                            span{
+                                display: block;
+                            }
+                            .goods-name{
+                                color: #333;
+                                font-size: 16px;
+                                margin-bottom: 2px;
+                            }
+                            .goods-desc{
+                                color: #999;
+                                font-size: 14px;
+                            }
+                            .goods-price{
+                                position: relative;
+                                display: inline-block;
+                                color: #c00;
+                                font-size: 22px;
+                                padding-left: 14px;
+                                i{
+                                    position: absolute;
+                                    left: 0;
+                                    font-size: 14px;
+                                    bottom: 3px;
+                                    font-style : normal;
+                                }
+                            }
+                        }
+                    }
+                }
+                .headset1{
+                    img{
+                        width : 100%;
+                        height : 100%;
+                        margin-top: 0;
+                    }
+                    .headset-info{
+                        position : absolute;
+                        top : 267px;
+                        left : 0;
+                        width : 100%;
+                        text-align: center;
+                        span{
+                            display : block;
+                        }
+                        .goods-name{
+                            color : #fff;
+                            font-size: 21px;
+                            font-weight: 700;
+                            margin-bottom: 0;
+
+                        }
+                        .goods-desc{
+                            color : #fff;
+                            font-size : 14px;
+                        }
+                        .goods-price{
+                            color: #ebce6b;
+                            font-size: 24px;
+                            font-weight: 700;
+                            position: relative;
+                            display: inline-block;
+                            padding-left: 14px;
+                            box-sizing: border-box;
+                            i{
+                                position : absolute;
+                                font-size : 22px;
+                                left : -4px;
+                                bottom : 1px;
+                                font-style : normal;
+                            }
+                            span{
+                                display : inline-block;
+                                font-size : 16px;
+                                font-weight: 400;
+                            }
+                            s{
+                                color : #fff;
+                                font-size : 14px;
+                                margin-left : 4px;
+                            }
+                        }
+                    }
+                }
+                .headset2{
+                    .headset-sign{
+                        position : absolute;
+                        background-image: linear-gradient(120deg,#ff3149,#ff64a6);
+                        top: 30px;
+                        left: 30px;
+                        display: block;
+                        width: 60px;
+                        height: 60px;
+                        line-height: 60px;
+                        color: #fff;
+                        font-size: 16px;
+                        text-align: center;
+                        border-radius: 50%;
+                    }
+                }
+                .headset4{
+                    margin-right : 0;
+                }
+            }
+        }
+    }
+}
+/* 奇趣探索 */
+.pandaer{
+    margin-bottom : 50px;
+    /* 标题 */
+    .pandaer-title{
+        font-size : 30px;
+        text-align: center;
+        margin-bottom: 10px;
+        h3{
+            font-weight: 400;
+        }
+    }
+    /* 奇趣探索大图片 */
+    .pandaer-box{
+        height : 450px;
+        background-color : #fff;
+        border-bottom : 1px solid #eee;
+        overflow : hidden;
+        box-sizing : border-box;
+        >a:hover{
+            opacity : .85;
+        }
+        a{
+            width : 100%;
+            height : 100%;
+            position : relative;
+            display : block;
+            transition: opacity .2s linear;
+            img{
+                position : absolute;
+                width: auto;
+                height: auto;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+    } 
+    /* 奇趣探索内容 */
+    .pandaer-content{
+        .pandaer-center{
+            width : 1240px;
+            margin : 0 auto;
+            ul{
+                overflow : hidden;
+                >li:hover{
+                    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+                }
+                li{
+                    float : left;
+                    position: relative;
+                    width: 303px;
+                    height: 375px;
+                    margin-right: 9px;
+                    margin-top: 10px;
+                    background-color: #fff;
+                    overflow: hidden;
+                    transition: all .3s ease;
+                    a{
+                        position : relative;
+                        width : 100%;
+                        height : 100%;
+                        text-align: center;
+                        img{
+                            // width : 100%;
+                            height : 230px;
+                            margin-top : 30px;
+                            display: inline-block;
+                        }
+                        .pandaer-info{
+                            position: absolute;
+                            top: 270px;
+                            left: 0;
+                            width: 100%;
+                            text-align: center;
+                            span{
+                                display: block;
+                            }
+                            .goods-name{
+                                color: #333;
+                                font-size: 16px;
+                                margin-bottom: 2px;
+                            }
+                            .goods-desc{
+                                color: #999;
+                                font-size: 14px;
+                            }
+                            .goods-price{
+                                position: relative;
+                                display: inline-block;
+                                color: #c00;
+                                font-size: 22px;
+                                padding-left: 14px;
+                                i{
+                                    position: absolute;
+                                    left: 0;
+                                    font-size: 14px;
+                                    bottom: 3px;
+                                    font-style : normal;
+                                }
+                                span{
+                                    display : inline-block;
+                                    font-size : 16px;
+                                    font-weight: 400;
+                                }
+                                s{
+                                    color : #666;
+                                    font-size : 14px;
+                                    margin-left : 8px;
+                                    box-sizing: border-box;
+                                }
+                            }
+                        }
+                    }
+                }
+                .pandaer1{
+                    img{
+                        width : 100%;
+                        height : 100%;
+                        margin-top: 0;
+                    }
+                    .pandaer-info{
+                        position : absolute;
+                        top : 267px;
+                        left : 0;
+                        width : 100%;
+                        text-align: center;
+                        span{
+                            display : block;
+                        }
+                        .goods-name{
+                            color : #fff;
+                            font-size: 21px;
+                            font-weight: 700;
+                            margin-bottom: 0;
+
+                        }
+                        .goods-desc{
+                            color : #fff;
+                            font-size : 14px;
+                        }
+                        .goods-price{
+                            color: #ebce6b;
+                            font-size: 24px;
+                            font-weight: 700;
+                            position: relative;
+                            display: inline-block;
+                            padding-left: 14px;
+                            box-sizing: border-box;
+                            i{
+                                position : absolute;
+                                font-size : 22px;
+                                left : -4px;
+                                bottom : 1px;
+                                font-style : normal;
+                            }
+                            span{
+                                display : inline-block;
+                                font-size : 16px;
+                                font-weight: 400;
+                            }
+                            s{
+                                color : #fff;
+                                font-size : 14px;
+                                margin-left : 4px;
+                            }
+                        }
+                    }
+                }
+                .pandaer2{
+                    .pandaer-sign{
+                        position : absolute;
+                        background-image: linear-gradient(120deg,#ff910e,#ffd037);
+                        top: 30px;
+                        left: 30px;
+                        display: block;
+                        width: 60px;
+                        height: 60px;
+                        line-height: 60px;
+                        color: #fff;
+                        font-size: 16px;
+                        text-align: center;
+                        border-radius: 50%;
+                    }
+                }
+                .pandaer4{
+                    margin-right : 0;
+                }
+            }
+        }
+    }
+    
+}
+// /* 智能家居 */
+.lipro{
+    margin-bottom : 50px;
+    /* 标题 */
+    .lipro-title{
+        font-size : 30px;
+        text-align: center;
+        margin-bottom: 10px;
+        h3{
+            font-weight: 400;
+        }
+    }
+    /* 智能家居大图片 */
+    .lipro-box{
+        height : 450px;
+        background-color : #fff;
+        border-bottom : 1px solid #eee;
+        overflow : hidden;
+        box-sizing : border-box;
+        >a:hover{
+            opacity : .85;
+        }
+        a{
+            width : 100%;
+            height : 100%;
+            position : relative;
+            display : block;
+            transition: .2s linear;
+            img{
+                position : absolute;
+                width: auto;
+                height: auto;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+    } 
+    /* 智能家居内容 */
+    .lipro-content{
+        .lipro-center{
+            width : 1240px;
+            margin : 0 auto;
+            ul{
+                overflow : hidden;
+                >li:hover{
+                    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+                }
+                li{
+                    float : left;
+                    position: relative;
+                    width: 303px;
+                    height: 375px;
+                    margin-right: 9px;
+                    margin-top: 10px;
+                    background-color: #fff;
+                    overflow: hidden;
+                    transition: all .3s ease;
+                    a{
+                        position : relative;
+                        width : 100%;
+                        height : 100%;
+                        text-align: center;
+                        img{
+                            // width : 100%;
+                            height : 230px;
+                            margin-top : 30px;
+                            display: inline-block;
+                        }
+                        .lipro-info{
+                            position: absolute;
+                            top: 270px;
+                            left: 0;
+                            width: 100%;
+                            text-align: center;
+                            span{
+                                display: block;
+                            }
+                            .goods-name{
+                                color: #333;
+                                font-size: 16px;
+                                margin-bottom: 2px;
+                            }
+                            .goods-desc{
+                                color: #999;
+                                font-size: 14px;
+                            }
+                            .goods-price{
+                                position: relative;
+                                display: inline-block;
+                                color: #c00;
+                                font-size: 22px;
+                                padding-left: 14px;
+                                i{
+                                    position: absolute;
+                                    left: 0;
+                                    font-size: 14px;
+                                    bottom: 3px;
+                                    font-style : normal;
+                                }
+                                span{
+                                    display : inline-block;
+                                    font-size : 16px;
+                                    font-weight: 400;
+                                }
+                                s{
+                                    color : #666;
+                                    font-size : 14px;
+                                    margin-left : 8px;
+                                    box-sizing: border-box;
+                                }
+                            }
+                        }
+                    }
+                }
+                .lipro1{
+                    img{
+                        width : 100%;
+                        height : 100%;
+                        margin-top: 0;
+                    }
+                    .lipro-info{
+                        position : absolute;
+                        top : 267px;
+                        left : 0;
+                        width : 100%;
+                        text-align: center;
+                        span{
+                            display : block;
+                        }
+                        .goods-name{
+                            color : #fff;
+                            font-size: 21px;
+                            font-weight: 700;
+                            margin-bottom: 0;
+
+                        }
+                        .goods-desc{
+                            color : #fff;
+                            font-size : 14px;
+                        }
+                        .goods-price{
+                            color: #ebce6b;
+                            font-size: 24px;
+                            font-weight: 700;
+                            position: relative;
+                            display: inline-block;
+                            padding-left: 14px;
+                            box-sizing: border-box;
+                            i{
+                                position : absolute;
+                                font-size : 22px;
+                                left : -4px;
+                                bottom : 1px;
+                                font-style : normal;
+                            }
+                            span{
+                                display : inline-block;
+                                font-size : 16px;
+                                font-weight: 400;
+                            }
+                            s{
+                                color : #fff;
+                                font-size : 14px;
+                                margin-left : 4px;
+                            }
+                        }
+                    }
+                }
+                .lipro2{
+                    .lipro-sign{
+                        position : absolute;
+                        background-image: linear-gradient(120deg,#ff910e,#ffd037);
+                        top: 30px;
+                        left: 30px;
+                        display: block;
+                        width: 60px;
+                        height: 60px;
+                        line-height: 60px;
+                        color: #fff;
+                        font-size: 16px;
+                        text-align: center;
+                        border-radius: 50%;
+                    }
+                }
+                .lipro4{
+                    margin-right : 0;
+                }
+            }
+        }
+    }
+}
+// /* 周边配件 */
+.parts{
+    margin-bottom : 50px;
+    /* 标题 */
+    .parts-title{
+        font-size : 30px;
+        text-align: center;
+        margin-bottom: 10px;
+        h3{
+            font-weight: 400;
+        }
+    }
+    /* 周边配件大图片 */
+    .parts-box{
+        height : 450px;
+        background-color : #fff;
+        border-bottom : 1px solid #eee;
+        overflow : hidden;
+        box-sizing : border-box;
+        >a:hover{
+            opacity : .85;
+        }
+        a{
+            width : 100%;
+            height : 100%;
+            position : relative;
+            display : block;
+            transition: .2s linear;
+            img{
+                position : absolute;
+                width: auto;
+                height: auto;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+    /* 周边配件内容 */
+    .parts-content{
+        .parts-center{
+            width : 1240px;
+            margin : 0 auto;
+            ul{
+                overflow : hidden;
+                >li:hover{
+                    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+                }
+                li{
+                    float : left;
+                    position: relative;
+                    width: 303px;
+                    height: 375px;
+                    margin-right: 9px;
+                    margin-top: 10px;
+                    background-color: #fff;
+                    overflow: hidden;
+                    transition: all .3s ease;
+                    a{
+                        position : relative;
+                        width : 100%;
+                        height : 100%;
+                        text-align: center;
+                        img{
+                            // width : 100%;
+                            height : 230px;
+                            margin-top : 30px;
+                            display: inline-block;
+                        }
+                        .parts-info{
+                            position: absolute;
+                            top: 270px;
+                            left: 0;
+                            width: 100%;
+                            text-align: center;
+                            span{
+                                display: block;
+                            }
+                            .goods-name{
+                                color: #333;
+                                font-size: 16px;
+                                margin-bottom: 2px;
+                            }
+                            .goods-desc{
+                                color: #999;
+                                font-size: 14px;
+                            }
+                            .goods-price{
+                                position: relative;
+                                display: inline-block;
+                                color: #c00;
+                                font-size: 22px;
+                                padding-left: 14px;
+                                i{
+                                    position: absolute;
+                                    left: 0;
+                                    font-size: 14px;
+                                    bottom: 3px;
+                                    font-style : normal;
+                                }
+                                span{
+                                    display : inline-block;
+                                    font-size : 16px;
+                                    font-weight: 400;
+                                }
+                                s{
+                                    color : #666;
+                                    font-size : 14px;
+                                    margin-left : 8px;
+                                    box-sizing: border-box;
+                                }
+                            }
+                        }
+                    }
+                }
+                .parts1{
+                    img{
+                        width : 100%;
+                        height : 100%;
+                        margin-top: 0;
+                    }
+                    .parts-info{
+                        position : absolute;
+                        top : 267px;
+                        left : 0;
+                        width : 100%;
+                        text-align: center;
+                        span{
+                            display : block;
+                        }
+                        .goods-name{
+                            color : #fff;
+                            font-size: 21px;
+                            font-weight: 700;
+                            margin-bottom: 0;
+
+                        }
+                        .goods-desc{
+                            color : #fff;
+                            font-size : 14px;
+                        }
+                        .goods-price{
+                            color: #ebce6b;
+                            font-size: 24px;
+                            font-weight: 700;
+                            position: relative;
+                            display: inline-block;
+                            padding-left: 14px;
+                            box-sizing: border-box;
+                            i{
+                                position : absolute;
+                                font-size : 22px;
+                                left : -4px;
+                                bottom : 1px;
+                                font-style : normal;
+                            }
+                            span{
+                                display : inline-block;
+                                font-size : 16px;
+                                font-weight: 400;
+                            }
+                            s{
+                                color : #fff;
+                                font-size : 14px;
+                                margin-left : 4px;
+                            }
+                        }
+                    }
+                }
+                .parts2,.parts5{
+                    .parts-sign{
+                        position : absolute;
+                        background-image: linear-gradient(120deg,#ff3149,#ff64a6);
+                        top: 30px;
+                        left: 30px;
+                        display: block;
+                        width: 60px;
+                        height: 60px;
+                        line-height: 60px;
+                        color: #fff;
+                        font-size: 16px;
+                        text-align: center;
+                        border-radius: 50%;
+                    }
+                }
+                .parts4{
+                    margin-right : 0;
+                }
+            }
+        }
+    }
+}
+// /* 社区热帖 */
+.post{
+    margin-bottom : 50px;
+    /* 标题 */
+    .post-title{
+        font-size : 30px;
+        text-align: center;
+        margin-bottom: 10px;
+        h3{
+            font-weight: 400;
+        }
+    }
+    /* 社区内容 */
+    .post-content{
+        .post-center{
+            width : 1240px;
+            margin : 0 auto;
+            ul{
+                overflow: hidden;
+            }
+            >ul>li:hover{
+                box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+            }
+            li{ 
+                float: left;
+                position: relative;
+                width: 303px;
+                height: 388px;
+                margin-right: 9px;
+                margin-bottom: 9px;
+                background-color: #fff;
+                overflow: hidden;
+                transition: all .3s ease;
+                a{
+                    position : relative;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    /* 用户封面 */
+                    .post-img{
+                        height: 190px;
+                        position: relative;
+                        overflow: hidden;
+                        img{
+                            margin: 0 auto;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    /* 用户头像 */
+                    .post-info{
+                        overflow: hidden;
+                        height: 42px;
+                        line-height: 42px;
+                        margin-top: 10px;
+                        padding: 0 15px;
+                        box-sizing : border-box;
+                        img{
+                            width: 36px;
+                            height: 36px;
+                            border: 1px solid #fff;
+                            border-radius: 50%;
+                            float: left;
+                            box-shadow: 1px 1px 1px 1px #eee;
+                            box-sizing: border-box;
+                        }
+                        span{
+                            margin-left: 15px;
+                            text-align: left;
+                            float: left;
+                        }
+                    }
+
+                    p{
+                        padding: 10px 15px 15px;
+                        font-size: 16px;
+                        line-height: 27px;
+                        text-align: left;
+                        height: 66px;
+                        overflow : hidden;
+                        box-sizing: border-box;
+                    }
+                    >span{
+                        color: #999;
+                        display: block;
+                        padding: 0 15px;
+                        margin-top: 10px;
+                        text-align: left;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+            .post4,.post8{
+                margin-right : 0;
+            }
+        }
+    }
+}
+// /* Flyme */
+.flyme{
+    margin-bottom : 50px;
+    /* 标题 */
+    .flyme-title{
+        font-size : 30px;
+        text-align: center;
+        margin-bottom: 10px;
+        h3{
+            font-weight: 400;
+        }
+    }
+    /* 内容 */
+    .flyme-content{
+        .flyme-center{
+            width : 1240px;
+            margin : 0 auto;
+            ul{
+                overflow : hidden;
+            }
+            >ul>li:hover{
+                box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+            }
+            li{
+                float : left;
+                position : relative;
+                height : 245px;
+                margin-bottom : 15px;
+                width : 303px;
+                margin-right : 9px;
+                background-color : #fff;
+                overflow : hidden;
+                transition: all .3s ease;
+                a{
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    position : relative;
+                    .flyme-img{
+                        height: 190px;
+                        position: relative;
+                        overflow: hidden;
+                        img{
+                            margin: 0 auto;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    p{
+                        font-size: 16px;
+                        line-height: 55px;
+                    }
+                }
+            }
+            .flyme1{
+                width : 615px;
+                .flyme-img{
+                    height : 245px;
+                    position: relative;
+                    overflow: hidden;
+                    img{
+                        margin: 0 auto;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .flyme3,.flyme7{
+                margin-right : 0;
+            }
+        }
+    }
+}
+// /* 精彩视频 */
+.video{
+    margin-bottom : 50px;
+    /* 标题 */
+    .video-title{
+        font-size : 30px;
+        text-align: center;
+        margin-bottom: 10px;
+        h3{
+            font-weight: 400;
+        }
+    }
+    /* 视频内容 */
+    .video-content{
+        .video-center{
+            width  : 1240px;
+            margin : 0 auto;
+            ul{
+                overflow : hidden;
+                >li:hover{
+                    box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+                }
+                li{
+                    float : left;
+                    position : relative;
+                    width : 303px;
+                    height : 244px;
+                    margin-right : 9px;
+                    margin-bottom : 9px;
+                    background-color: #fff;
+                    overflow : hidden;
+                    transition: all .3s ease;
+                    a{
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        position : relative;
+                        .video-img{
+                            height: 190px;
+                            position: relative;
+                            overflow: hidden;
+                            i{
+                                position : absolute;
+                                width : 30px;
+                                height : 30px;
+                                right : 15px;
+                                bottom : 15px;  
+                                background-image : url(../img/m-an-1.png);
+                                background-size : 100%;
+                            }
+                            img{
+                                margin: 0 auto;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        p{
+                            font-size: 16px;
+                            line-height: 55px;
+                        }
+                    }
+                }
+                .video4,.video8{
+                    margin-right : 0;
+                }
+            }
+        }
+    }
+}

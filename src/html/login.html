@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flyme 账号 - 登录</title>
+    <link rel="stylesheet" href="../css/logo.min.css" />
+    <script src="../lib/jquery-1.12.4.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../lib/jquery.cookie.js"></script>
+    <script src="../lib/coco-message.js"></script>
+    <link rel="shortcut icon" href="../img/bitbug_favicon.ico">
+    <style>
+     .w {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #3058df;
+}
+    </style>
+  </head>
+  <body>
+    <!-- logo -->
+    <div class="logo w">
+      <img src="../img/logo.png" alt="" id="gw"/>
+    </div>
+    <!-- 中间 -->
+    <div class="main">
+      <div class="w">
+        <!-- 表单 -->
+        <div class="login">
+          <!-- 右上角角标 -->
+          <img src="../img/pc.png" alt="">
+          <!-- 切换框 -->
+          <h3><span class="span1">账号登录</span><i>|</i><span class="span2">二维码登录</span></h3>
+          <div class="bottom">
+            <input class="form-control" type="text" placeholder="手机号 / Flyme账号" id="user">
+          <input class="form-control" type="password" placeholder="密码" id="pwd">
+          <!-- 验证码 -->
+          <div class="code">
+            <input class="form-control " type="text" placeholder="请输入验证码" id="input-val">
+            <canvas id="canvas" width="100" height="43"></canvas>
+          </div>
+          <!-- 免登录 -->
+          <label>
+            <input type="checkbox" value="" id="cex">
+            记住登录状态
+          </label> <br>
+          <!-- 登录按钮 -->
+          <button id="login">登录</button><br>
+          <!-- 注册和忘记密码 -->
+          <p><a href="../html/register.html" id="register">注册</a><a href="javascript:;" id="forget">忘记密码</a></p>
+        </div>
+        <!-- 二维码框 -->
+      <div class="qrCode">
+        <img src="../img/erwm.png" alt="">
+        <p>请使用账号中心右上角或最新的Flyme系统相机扫码功能，扫码登录</p>
+      </div>
+          </div>
+      </div>
+    </div>
+    <!-- 尾部 -->
+    <div id="footer">
+        <div class="w">
+            <div class="top">
+                <p>关于魅族 | 工作机会 | 联系我们 | 法律声明 | 常见问题 | 简体中文<span class="span1">客服热线400-788-3333
+                </span> <span class="span2">在线客服</span> <img src="../img/cqf_2.png" alt=""></p>
+            </div>
+            <p>C2022Meizu Telecom Equipment Co, ltd All ights reserved.备案号:卑ICP备13003602号-4经营许可证编号:奥B2-20130198营业执照</p>
+        </div>
+    </div>
+    <script src="../lib/code.js"></script>
+    <script src="../js/login.min.js"></script>
+    <script>
+      "use strict";
+      cocoMessage.config({
+        duration: 2000,
+      });
+    </script>
+  
+
+  
+  </body>
+</html>

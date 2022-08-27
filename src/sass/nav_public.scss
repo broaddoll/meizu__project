@@ -1,0 +1,424 @@
+@import 'public';
+
+// 顶部
+header {
+    background-color: white;
+    position: relative;
+
+    // 二级菜单
+    .menu {
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #fff;
+        z-index: 1010101010;
+        .menuCenter {
+            // height: 0px;
+            width: 1064px;
+            margin: 0 auto;
+            // background-color: red;
+            overflow: hidden;
+
+            // 商品列表样式
+            li {
+                float: left;
+                padding: 5px 5px 20px;
+                width: 142px;
+                height: 140px;
+                opacity: 0;
+                font-size: 12px;
+                // background-color: #030303;
+                text-align: center;
+
+                img {
+                    width: 120px;
+                    height: 120px;
+                    opacity: 0;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+}
+
+header #center {
+    height: 80px;
+    width: 1240px;
+    margin: 0 auto;
+
+    #logo,
+    #nav,
+    #search {
+        float: left;
+        height: 80px;
+    }
+
+    #logo {
+        width: 150px;
+        height: 80px;
+
+        .index {
+            display: inline-block;
+            width: 150px;
+            height: 80px;
+            background-image: url(../img/logo.png);
+            background-repeat: no-repeat;
+            background-size: 80% 40%;
+            background-position: 0px 25px;
+        }
+    }
+
+    #nav {
+        width: 780px;
+        margin-left: 50px;
+
+        >div {
+            float: left;
+            height: 80px;
+            margin-left: 38px;
+            line-height: 80px;
+            font-size: 14px;
+        }
+
+        >div a {
+            display: inline-block;
+        }
+
+        >div a:hover {
+            color: #008CFF;
+        }
+    }
+
+    #search {
+        width: 200px;
+        margin-left: 20px;
+
+        #searchBar {
+            width: 120px;
+            float: left;
+
+            input {
+                margin-top: 23px;
+                width: 120px;
+                border-radius: 50px;
+                box-sizing: border-box;
+                padding: 0 10px;
+                border: 1px solid gray;
+                height: 30px;
+                font-size: 12px;
+                background-image: url(../img/sousuo.png);
+                background-repeat: no-repeat;
+                background-position: 90px 2px;
+            }
+        }
+
+    }
+
+    #personal,
+    #car {
+        width: 29px;
+        height: 29px;
+        float: left;
+        margin-top: 23px;
+        margin-left: 10px;
+
+    }
+
+    #personal {
+        position: relative;
+
+        #touxiang {
+            width: 29px;
+            height: 29px;
+            border-radius: 50px;
+        }
+
+        :hover {
+            cursor: pointer;
+        }
+
+        // 登陆划出框
+        #land {
+            display: none;
+            position: absolute;
+            right: 0;
+            z-index: 1000;
+            width: 98px;
+            background-color: #fff;
+            top: 37px;
+            left: 50%;
+            border-radius: 2px;
+            box-sizing: border-box;
+            text-align: center;
+            padding: 15px 0;
+            margin-left: -48px;
+            box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+
+            ::after {
+                display: block;
+                content: "";
+                width: 0;
+                height: 0;
+                border: 10px solid;
+                border-color: transparent transparent #fff;
+                border-top-color: transparent;
+                border-right-color: transparent;
+                border-bottom-color: rgb(255, 255, 255);
+                border-left-color: transparent;
+                left: 40px;
+                top: -15px;
+                position: absolute;
+            }
+
+            li {
+                display: block;
+                margin: 15px auto;
+
+                a:hover {
+                    color: #008CFF;
+                }
+            }
+        }
+
+
+    }
+
+    #car:hover .smallCar {
+        display: block;
+    }
+
+    #car {
+        position: relative;
+
+        .num {
+            background-color: red;
+            width: 13px;
+            height: 13px;
+            border-radius: 50px;
+            position: absolute;
+            top: 0;
+            left: 20px;
+        }
+
+        // 小型购物车
+        .smallCar {
+            display: none;
+            position: absolute;
+            cursor: auto;
+            top: 35px;
+            left: -280px;
+            width: 318px;
+            min-height: 120px;
+            font-size: 12px;
+            background-color: #fff;
+            box-shadow: 1px 1px 4px rgb(153 153 153 / 30%);
+            border-radius: 3px;
+            text-align: left;
+            z-index: 999;
+
+            .car-P {
+                margin: 20px 0 5px 20px;
+                color: #999;
+            }
+
+            .car-list {
+                min-height: 60px;
+                transition: height .2s;
+
+                .car-item {
+                    position: relative;
+                    top: 4px;
+                    // opacity: 0;
+                    display: table;
+                    padding: 0 20px;
+                    margin: 0;
+                    width: 277px;
+                    transition: all .4s linear;
+                    -webkit-animation: .5s ease store-cart-item-animation forwards 1;
+                    animation: .5s ease store-cart-item-animation forwards 1;
+                    border-bottom: 1px solid #eee;
+                    top: 0\9;
+
+                    .car-content {
+                        display: table-cell;
+                        height: 75px;
+                        vertical-align: middle;
+                        zoom: 1;
+                        color: #666;
+                        font-size: 12px;
+
+                        img {
+                            width: 48px;
+                            height: 48px;
+                            float: left;
+                        }
+
+                        .car-price {
+                            float: right;
+                        }
+                    }
+                }
+            }
+
+            .car-footer {
+                display: table;
+                background-color: #FAFAFC;
+                height: 66px;
+                width: 100%;
+                border-radius: 0 0 3px 3px;
+                line-height: 66px;
+                box-sizing: border-box;
+                padding: 0px 20px;
+
+                .car-num {
+                    color: red;
+                }
+
+                .go-car {
+                    transition: 1s;
+                    float: right;
+                    margin-top: 13px;
+                    background-color: #008CFF;
+                    width: 100px;
+                    height: 45px;
+                    border-radius: 5px;
+                    color: #fff;
+                    font-size: 16px;
+                    text-align: center;
+                    line-height: 45px;
+
+                }
+
+                .go-car:hover {
+                    background-color: #40D2F8;
+                }
+            }
+
+            ::after {
+                position: absolute;
+                content: '';
+                top: -7px;
+                left: 288px;
+                width: 0;
+                height: 0;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-bottom: 8px solid #fff;
+            }
+        }
+    }
+
+}
+
+// 底部
+footer {
+    background-color: #fff;
+    padding: 48px 0 20px;
+    box-sizing: border-box;
+    height: 318px;
+
+    #footerCenter {
+        width: 1240px;
+        margin: 0 auto;
+
+        >div {
+            width: 1240px;
+        }
+
+        #footerTop {
+            height: 84px;
+
+            .footer-ul li {
+                width: 150px;
+                height: 69px;
+                float: left;
+                text-align: center;
+                line-height: 30px;
+                color: #999;
+
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    width: 50px;
+                }
+
+
+            }
+        }
+
+        .footer-right {
+            width: 155px;
+            height: 102px;
+            float: right;
+            margin-top: -18px;
+            text-align: right;
+
+            span {
+                color: #999;
+                line-height: 30px;
+            }
+
+            p {
+                color: #008cff;
+                font-size: 23px;
+                font-weight: 400;
+                margin-top: -6px;
+                line-height: 40px;
+            }
+
+            .right-btn {
+                height: 30px;
+                padding: 0 16px;
+                overflow: hidden;
+                position: relative;
+                text-align: center;
+                line-height: 30px;
+                color: #fff;
+                border-radius: 20px;
+                margin-top: 3px;
+                display: inline-block;
+                font-size: 14px;
+                background: #008cff;
+            }
+        }
+    }
+
+    .footer-hr {
+        margin: 10px auto 28px;
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #eee;
+        padding: 0;
+    }
+
+    #footerBottom {
+        height: 125px;
+
+        .bottom-ul li {
+            padding-right: 15px;
+            border-right: 1px solid #d6d6d6;
+            float: left;
+            height: 18px;
+            margin-right: 15px;
+
+            a {
+                color: #999;
+                display: block;
+                line-height: 18px;
+            }
+
+            a:hover {
+                color: #008CFF;
+            }
+        }
+
+        .bottom-text {
+            padding-top: 40px;
+            box-sizing: border-box;
+            color: #999;
+        }
+    }
+}

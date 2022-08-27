@@ -1,0 +1,110 @@
+@import "public";
+
+.logo {
+  width: 1240px;
+  height: 68px;
+  overflow: hidden;
+  img {
+    margin-top: 24px;
+    width: 110px;
+    height: 20px;
+  }
+} 
+.main {
+  background: linear-gradient(180deg, #edfcfd 0%, #faffff 100%);
+  .w {
+    height: 750px;
+    background: url(../img/cqf_1.png) no-repeat center center;
+    position: relative;
+    .login {
+      position: absolute;
+      top: 24%;
+      right: 85px;
+      background-color: #fff;
+      padding: 35px 35px 10px;
+      border-radius: 2px;
+      box-shadow: 0 6px 12px 0 rgb(138 153 150 / 15%);
+      img{
+        position: absolute;
+        right:$top;
+        top: $top;
+    }
+      h3 {
+        width: 300px;
+        text-align: center;
+        color: #387aff;
+        font-size: 14px;
+      }
+      #user,#pwd{
+          margin-top: $top;
+      }
+      .code{
+        width: 300px;
+        margin-top: $top;
+        #input-val{
+         display: inline-block;
+          width: 195px ;
+        }
+        canvas{
+          width: 100px;
+          height: 30px;
+          vertical-align: middle;
+        }
+      }
+      label{
+        width: 300px;
+        font-size: 12px;
+        margin-top: $top;
+        font-weight: normal;
+        color: #999;
+        span{
+          color:#387aff;
+        }
+      }
+      #register {
+        width: 300px;
+        height: 46px;
+        background-color: #387AFF;
+        margin-top: $top;
+        border: none;
+        color: #fff;
+      }
+      p {
+        width: 300px;
+        margin-top: $top;
+        #login {
+          float: left;
+        }
+      }
+    }
+  }
+}
+#footer {
+  .w {
+    background: #fff;
+    .top {
+      width: 1000px;
+      margin: 30px auto;
+      height: 60px;
+      line-height: 60px;
+      .span1 {
+        margin-left: 50px;
+      }
+      .span2 {
+        color: white;
+        background-color: #32a5e7;
+      }
+      img {
+        margin-top: 10px;
+        float: right;
+        vertical-align: middle;
+      }
+    }
+    > p {
+      width: 1000px;
+      margin: $top auto;
+      font-size: 12px;
+      color: #999;
+    }
+  }
+}

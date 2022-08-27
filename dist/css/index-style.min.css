@@ -1,0 +1,20 @@
+#index-tou {
+  position: absolute;
+  z-index: 10000;
+  background-color: rgba(255, 255, 255, 0);
+  width: 100%;
+}
+#index-tou a {
+  color: white;
+}
+#index-tou a p {
+  color: #333;
+}
+
+#index-tou:hover {
+  background-color: white;
+}
+
+#index-tou:hover .we {
+  color: black;
+}

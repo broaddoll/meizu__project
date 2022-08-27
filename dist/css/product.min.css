@@ -1,0 +1,273 @@
+.w {
+  width: 1240px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+#head {
+  width: 100%;
+  height: 120px;
+  display: none;
+}
+#head #headleft {
+  width: 800px;
+  height: 120px;
+  float: left;
+}
+#head #headleft img {
+  width: 100px;
+  height: 80px;
+  float: left;
+}
+#head #headleft p {
+  font-size: 20px;
+  float: left;
+  margin-left: -10px;
+}
+#head #headright {
+  width: 350px;
+  height: 120px;
+  float: left;
+  position: relative;
+}
+#head #headright input {
+  width: 180px;
+  height: 80px;
+  background-color: #e03d3d;
+  position: absolute;
+  right: 34px;
+  top: 10px;
+}
+#head #headright p {
+  font-size: 18px;
+}
+
+#center #meizu {
+  width: 100%;
+  height: 93px;
+  background-color: #f6f8fb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#center #meizu #meizuleft {
+  display: flex;
+  margin-left: 4rem;
+}
+#center #meizu #meizuleft span {
+  font-size: 28px;
+}
+#center #meizu #meizuleft a {
+  margin-left: 2rem;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#center #meizu #meizuright {
+  display: flex;
+  margin-right: 4rem;
+}
+#center #meizu #meizuright a {
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+#center #iphone {
+  justify-content: space-between;
+}
+#center #iphone #iphoneright {
+  float: right;
+  width: 570px;
+  height: 1233px;
+}
+#center #iphone #iphoneright #p1 {
+  color: #e03d3d;
+}
+#center #iphone #iphoneright #p2 {
+  color: #e03d3d;
+}
+#center #iphone #iphoneright #p3 {
+  box-sizing: border-box;
+}
+#center #iphone #iphoneright #p4 {
+  box-sizing: border-box;
+}
+#center #iphone #iphoneright #div1 {
+  width: 500px;
+  height: 40px;
+  background-color: #e03d3d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#center #iphone #iphoneright #div1 #p5 {
+  color: white;
+  line-height: 40px;
+  margin-left: 10px;
+}
+#center #iphone #iphoneright #div2 {
+  position: relative;
+}
+#center #iphone #iphoneright #div2 #span1 {
+  color: #e03d3d;
+  font-size: 20px;
+}
+#center #iphone #iphoneright #div2 #span2 {
+  color: #e03d3d;
+  font-size: 30px;
+}
+#center #iphone #iphoneright #div2 #span3 {
+  color: #e03d3d;
+}
+#center #iphone #iphoneright #div3 {
+  width: 700px;
+  border-bottom: 1px solid gray;
+  margin: 60px 0 0 -82px;
+  box-sizing: border-box;
+}
+#center #iphone #iphoneright #buy #buytop {
+  display: flex;
+  justify-content: space-between;
+}
+#center #iphone #iphoneright #buy #buytop #purchased {
+  width: 60px;
+  height: 20px;
+  background-color: #e03d3d;
+  text-align: center;
+  position: relative;
+  left: 0px;
+  top: 20px;
+  box-sizing: border-box;
+}
+#center #iphone #iphoneright #buy #buytop #buyinit {
+  position: relative;
+  left: -100px;
+  top: 20px;
+}
+#center #iphone #iphoneright #buy #buytop #button {
+  position: relative;
+  top: 20px;
+  left: -98px;
+}
+#center #iphone #iphoneright #buy #buydown {
+  display: flex;
+  justify-content: space-between;
+}
+#center #iphone #iphoneright #buy #buydown span {
+  position: relative;
+  top: 30px;
+  left: 0px;
+}
+#center #iphone #iphoneright #delivery {
+  position: relative;
+  top: 80px;
+  left: 0px;
+}
+#center #iphone #iphoneright #model {
+  width: 500px;
+  height: 50px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  left: 0px;
+  top: 120px;
+}
+#center #iphone #iphoneright #model span {
+  line-height: 50px;
+}
+#center #iphone #iphoneright #edition {
+  position: relative;
+  top: 140px;
+  left: 0px;
+}
+#center #iphone #iphoneright #open {
+  display: flex;
+  justify-content: space-between;
+}
+#center #iphone #iphoneright #open div {
+  width: 350px;
+  height: 50px;
+  position: relative;
+  top: 160px;
+  left: 0px;
+  text-align: center;
+  line-height: 50px;
+}
+#center #iphone #iphoneright #opennext {
+  width: 350px;
+  height: 50px;
+  position: relative;
+  top: 100px;
+  left: 0px;
+  text-align: center;
+  line-height: 50px;
+}
+#center #iphone #iphoneright #num {
+  position: relative;
+  left: 0;
+  top: 260px;
+}
+#center #iphone #iphoneright #add span {
+  font-size: 40px;
+  position: relative;
+  top: 280px;
+  left: 10px;
+}
+#center #iphone #iphoneright #add input {
+  width: 100px;
+  height: 60px;
+  position: relative;
+  top: 280px;
+  left: 20px;
+  text-align: center;
+}
+#center #iphone #iphoneright #money {
+  position: relative;
+}
+#center #iphone #iphoneright #money #coin {
+  font-size: 16px;
+  position: absolute;
+  left: 23px;
+  top: 350px;
+  color: #e03d3d;
+}
+#center #iphone #iphoneright #money span {
+  position: absolute;
+  left: 60px;
+  top: 340px;
+  font-size: 26px;
+  color: #e03d3d;
+}
+#center #iphone #iphoneright #addcart {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+}
+#center #iphone #iphoneright #addcart #addcartleft {
+  width: 220px;
+  height: 380px;
+  background-color: #e03d3d;
+  position: relative;
+  top: 350px;
+  left: 0px;
+  text-align: center;
+  line-height: 30px;
+}
+#center #iphone #iphoneright #addcart #addcartright {
+  width: 250px;
+  height: 30px;
+  background-color: skyblue;
+  position: relative;
+  top: 350px;
+  left: -100px;
+  text-align: center;
+  line-height: 30px;
+}
+#center #banner img {
+  width: 100%;
+}
